@@ -2,7 +2,15 @@ class product {
   final String name;
   final String category;
   final String picture;
-  product({required this.name, required this.category, required this.picture});
+  bool isFavorite;
+  int quantity;
+  product({
+    required this.name,
+    required this.category,
+    required this.picture,
+    this.quantity = 0,
+    this.isFavorite = false,
+  });
 }
 
 final List<product> productList = [

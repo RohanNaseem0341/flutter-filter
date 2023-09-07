@@ -1,8 +1,11 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:project/Screens/1stScreen.dart';
 
 void main() {
-  runApp(const Home());
+  runApp(
+    Home(),
+  );
 }
 
 class Home extends StatelessWidget {
@@ -13,7 +16,7 @@ class Home extends StatelessWidget {
     return const MaterialApp(
       title: 'HomePage',
       debugShowCheckedModeBanner: false,
-      home: screen1(),
+      home: Screen1(),
     );
   }
 }
